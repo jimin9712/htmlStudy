@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회사 수익 테이블</title>
+<style>
+body {
+	font-family:cursive  ; justify-content : center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f8f9fa;
+	justify-content: center;
+}
+
+table, tr, td, th {
+	text-align: center;
+	width: 450px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.total {
+	font-weight: bold;
+}
+
+.negative {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<table>
+		<caption>
+			<strong>회사 수익 테이블(\)</strong>
+		</caption>
+		<thead>
+			<tr>
+				<th>거래처</th>
+				<th>흑자</th>
+				<th>적자</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>회사1</td>
+				<td>10,000,000</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>회사2</td>
+				<td></td>
+				<td>5,000,000</td>
+			</tr>
+			<tr>
+				<td>회사3</td>
+				<td></td>
+				<td>7,000,000</td>
+			</tr>
+			<tr class="total">
+				<td rowspan="2">총 계</td>
+				<td>10,000,000</td>
+				<td>12,000,000</td>
+			</tr>
+			<tr class="total">
+				<td colspan="3" class="negative">-2,000,000</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
